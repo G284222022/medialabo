@@ -2,6 +2,11 @@ p {
 	color: navy;
 }
 
+h1{
+	color: black;
+	text-shadow: cyan 0px 0 10px;
+}
+
 h3, h4{
     color: navy;
 	background-color: lightskyblue ;
