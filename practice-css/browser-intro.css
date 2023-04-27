@@ -8,13 +8,17 @@ p.info {
 }
 
 h1 {
-	background-color: #7f7fcf;
+	background-color: white;
+	text-shadow: navy 0px 10px;
 }
 
 h2 {
-	border: solid 1px black;
+	color: #3f3fa1;
 	margin: 5px;
+	font-family: cursive;
+	background: linear-gradient(0.25turn, white, #ffef)
 }
+
 
 div#zentai {
 	display: grid;
