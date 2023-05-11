@@ -27,13 +27,16 @@ function hantei() {
   if (kaisu > 4) {
     console.log("答えは" + kotae +"でした．すでにゲームは終わっています");
   }
+  else if(kaisu == 3){
+    console.log("まちがい. 残念でした答えは" + kotae + "です.")
+  }
   else{
     if (yoso > kotae) {
-        console.log("答えはもっと小さいですよ");
+        console.log("まちがい.答えはもっと小さいですよ");
       }
     
     else if(yoso < kotae) {
-        console.log("答えはもっと大きいですよ");
+        console.log("まちがい.答えはもっと大きいですよ");
       }
     
     else{
