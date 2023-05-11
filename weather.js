@@ -46,4 +46,4 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name + ": Max:" + data.main.temp_min + " Min:" + data.main.temp_max);
+console.log(data.name + ": Max:" + data.main.temp_max + " Min:" + data.main.temp_min);
