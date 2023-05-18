@@ -8,6 +8,7 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
+
 hantei();
 hantei();
 hantei();
@@ -21,8 +22,19 @@ function hantei() {
   // 課題3-1における出力先はコンソール
   let yoso = 4;
   kaisu += 1;
+  
+  <p id="result">
+    <span id="kaisu"></span>
+    <span id="answer"></span>
+  </p>
 
-  console.log(kaisu + "回目の予想: " + yoso)
+  let result = document.querySelector('p#result');    
+  let kaisu = document.querySelector('span#kaisu');
+  let answer = document.querySelector("span#answer");    
+  kaisu.textContent = yoso;
+  answer.textContent = kaisu;
+  result.insertAdjacentElement("afterend", kaisu);
+  result.insertAdjacentElement("afterend", answer);
 
   if (kaisu > 3) {
     console.log("答えは" + kotae +"でした．すでにゲームは終わっています");
