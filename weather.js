@@ -46,4 +46,9 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-console.log(data.name + ": Max:" + data.main.temp_max + " Min:" + data.main.temp_min);
+let we = document.querySelector('p#weather'); 
+let p = document.createElement("p");   
+text = data.name + ": Max:" + data.main.temp_max + " Min:" + data.main.temp_min; 
+p.textContent = text;
+we.insertAdjacentElement("afterend", p);
+

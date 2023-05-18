@@ -10,9 +10,6 @@ let kaisu = 0;
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 
 hantei();
-hantei();
-hantei();
-hantei();
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -32,23 +29,29 @@ function hantei() {
   p.insertAdjacentElement("afterend", spankaisu);
   p.insertAdjacentElement("afterend", spananswer);
 
+  let p2 = document.createElement("p"); 
+  
+
   if (kaisu > 3) {
-    console.log("答えは" + kotae +"でした．すでにゲームは終わっています");
+    p2.textContent = "答えは" + kotae +"でした．すでにゲームは終わっています";
+    result.insertAdjacentElement("afterend", p2);
   }
   else if(kaisu == 3){
-    console.log("まちがい. 残念でした答えは" + kotae + "です.")
+    p2.textContent = "まちがい. 残念でした答えは" + kotae + "です."
+    result.insertAdjacentElement("afterend", p2);
   }
   else{
     if (yoso > kotae) {
-        console.log("まちがい.答えはもっと小さいですよ");
+      p2.textContent = "まちがい.答えはもっと小さいですよ";
       }
     
     else if(yoso < kotae) {
-        console.log("まちがい.答えはもっと大きいですよ");
+      p2.textContent = "まちがい.答えはもっと大きいですよ";
       }
     
     else{
-        console.log("正解です.おめでとう!");
+      p2.textContent = "正解です.おめでとう!";
       }
   }
+  result.insertAdjacentElement("afterend", p2);
 }
