@@ -23,18 +23,14 @@ function hantei() {
   let yoso = 4;
   kaisu += 1;
   
-  <p id="result">
-    <span id="kaisu"></span>
-    <span id="answer"></span>
-  </p>
-
-  let result = document.querySelector('p#result');    
-  let kaisu = document.querySelector('span#kaisu');
-  let answer = document.querySelector("span#answer");    
-  kaisu.textContent = yoso;
-  answer.textContent = kaisu;
-  result.insertAdjacentElement("afterend", kaisu);
-  result.insertAdjacentElement("afterend", answer);
+  let result = document.querySelector('p#result'); 
+  let p = document.createElement("p");   
+  let spankaisu = document.querySelector('span#kaisu');
+  let spananswer = document.querySelector("span#answer");    
+  spankaisu.textContent = kaisu;
+  spananswer.textContent = yoso;
+  p.insertAdjacentElement("afterend", spankaisu);
+  p.insertAdjacentElement("afterend", spananswer);
 
   if (kaisu > 3) {
     console.log("答えは" + kotae +"でした．すでにゲームは終わっています");
