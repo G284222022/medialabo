@@ -46,9 +46,18 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-let we = document.querySelector('p#weather'); 
-let p = document.createElement("p");   
-text = data.name + ": Max:" + data.main.temp_max + " Min:" + data.main.temp_min; 
+let we = document.querySelector('h3#weather'); 
+let p = document.createElement("h3");   
+text = "都市名:" + data.name + "   最高気温:" + data.main.temp_max + "   最低気温:" + data.main.temp_min; 
 p.textContent = text;
 we.insertAdjacentElement("afterend", p);
 
+let button = document.querySelector('#print');
+button.addEventListener('click', kensaku);
+
+
+function kensaku(){
+  let i = document.querySelector('input[name="target"]');
+  let target = i.value;       // ユーザが記入した文字列
+  
+}
