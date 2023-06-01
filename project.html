@@ -5,13 +5,33 @@
     <title>My test page</title>
     <link rel="stylesheet" href="project.css">
     <script src="weather.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <h1>天気予報</h1>
-    <button id="search">天気を取得</button>
-    <label for="yoso">天気を絞り込み:</label>
-    <input type="text" name="target" size="12">
-    <button id="print">検索</button>
-    <h3 id="weather"></h3>
+    <button id="search">全て取得</button>
+    <br>
+    <label for="yoso">天気を絞り込み</label>
+    <br>
+    <p>
+    <input type="checkbox" name="city" id="new">ニューヨーク 
+    <input type="checkbox" name="city" id="ros">ロサンゼルス
+    <input type="checkbox" name="city" id="rio">Rio de Janeiro
+    <input type="checkbox" name="city" id="pari">Paris
+    <input type="checkbox" name="city" id="ron">ロンドン
+    <input type="checkbox" name="city" id="Sydney">シドニー
+    <br>
+    <input type="checkbox" name="city" id="Singa">シンガポール
+    <input type="checkbox" name="city" id="Tokyo">東京
+    <input type="checkbox" name="city" id="pekin">北京
+    <input type="checkbox" name="city" id="yohane">ヨハネスブルク
+    <input type="checkbox" name="city" id="mosukuwa">モスクワ
+    <input type="checkbox" name="city" id="kairo">カイロ
+    
+
+    <button id="filter">絞り込み</button>
+    
+
+    <div id="weather"></div>
   </body>
 </html>
