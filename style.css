@@ -1,13 +1,40 @@
 p {
-	color: navy;
-}
-
-h1{
 	color: black;
-	text-shadow: cyan 0px 0 10px;
+	padding: 0px 15px 0;
 }
 
-h3, h4{
+div{
+	padding: 15px 15px 0;
+}
+
+header{
+	color: black;
+	background-color: #e0ffff;
+	padding: 15px 15px 0;
+	border-bottom: 2px solid skyblue;
+	margin-bottom: 50px;
+}
+
+h2{
+	color: black;
+	background: linear-gradient(transparent 65%, yellow 30%);
+    width: 370px;
+}
+
+h3.pa{
     color: navy;
-	background: linear-gradient(0.25turn, lightskyblue, #ffef)
+	background: linear-gradient(0.25turn, lightskyblue, #ffef);
+}
+
+div.jamp{
+		margin-bottom: 10px;
+		padding: 1em 0em;
+		border: 1px solid #999;
+		background-color: #f7f7f7;
+		width: 300px;
+}
+
+
+html{
+	background-color: #f5fffa ;
 }
